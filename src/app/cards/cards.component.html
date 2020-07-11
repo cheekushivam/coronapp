@@ -1,0 +1,31 @@
+<div class="container" >
+
+    <mat-card class="infected">
+      <h4 class="titlestyle">Infected</h4>
+    <mat-card-content>
+      <div class= "countstyle" [countUp]="this.coronaIndiaData['confirmed']">0</div>
+      <div class="datestyle">{{this.coronaIndiaData['lastUpdate'] | date : 'mediumDate'}}</div>
+      <p>Number of active cases of <strong style="color:red">COVID-19</strong>.</p>
+    </mat-card-content>
+    </mat-card>
+
+    <mat-card  class="recovered">
+      <h4 class="titlestyle">Recovered</h4>
+      <mat-card-content>
+        <div class= "countstyle" [countUp]="this.coronaIndiaData['recovered']">0</div>
+        <div class="datestyle">{{this.coronaIndiaData['lastUpdate'] | date : 'mediumDate'}}</div>
+        <p>Number of active cases of <strong style="color:green;">COVID-19</strong>.</p>
+      </mat-card-content>
+      </mat-card>
+
+      <mat-card  class="deaths">
+        <h4 class="titlestyle">Deaths</h4>
+        <mat-card-content>
+          <div class= "countstyle" [countUp]="this.coronaIndiaData['deaths']">0</div>
+          <div class="datestyle">{{this.coronaIndiaData['lastUpdate'] | date : 'mediumDate'}}</div>
+          <p>Number of recoveries from <strong style="color:blue;">COVID-19</strong>.</p>
+        </mat-card-content>
+        </mat-card>
+</div>
+
+

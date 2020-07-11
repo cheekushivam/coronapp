@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-card class="cardcontainer">
+    <h4 class="titlestyle">Make Country Selection!!!</h4>
+  <mat-card-content>
+
+  </mat-card-content>
+  <mat-card-actions>
+
+    <mat-form-field class="selectcontrol" appearance="fill">
+      <mat-label>Select Country</mat-label>
+      <mat-select (selectionChange)="sendCountry()"  [(ngModel)]="selectedValue">
+        <mat-option value="Global">Global</mat-option>
+        <mat-option *ngFor="let country of this.countries"  value={{country}}>{{country}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </mat-card-actions>
+  </mat-card>
+</div>
+
+
+

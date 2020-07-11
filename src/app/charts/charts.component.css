@@ -1,0 +1,13 @@
+.lineChartcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.barChartcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.cardContainer{
+    width: 85%;
+}

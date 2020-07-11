@@ -1,0 +1,22 @@
+.selectcontrol{
+  width: 100%;
+
+}
+
+.cardcontainer{
+  width: 60%;
+  border: 8px solid red;
+}
+
+.titlestyle{
+  color:black;
+  text-align: center;
+  font-size: large;
+  font-weight: 800;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
